@@ -23,12 +23,12 @@ def compute_score(data_source:str,
     print("Solution: ", solution_str)
 
     try:
-        string_in_last_boxed = last_boxed_only_string(solution_str)
+        string_in_last_boxed = last_boxed_only_string(solution_str)     #提取最后一个box的字符
         if string_in_last_boxed is not None:
-            answer = remove_boxed(string_in_last_boxed)
+            answer = remove_boxed(string_in_last_boxed) #提取答案
             if data_source == "theoretical_physics":
                 answer = answer_refine(answer)
-                ground_truth = answer_refine(ground_truth)
+                ground_truth = answer_refine(ground_truth)  
                 is_correct = is_equiv_TP(answer, ground_truth, verbose=True)
                 if is_correct:
                     score = 1.0
@@ -51,7 +51,7 @@ def compute_score(data_source:str,
     }
 
 
-def is_equiv_TP(answer_str, truth_str, verbose=False) -> bool:
+def is_equiv_TP(answer_str, truth_str, verbose=False) -> bool:   #验证核心逻辑
     if answer_str is None and truth_str is None:    
         print("WARNING: Both None")
         return True
@@ -69,7 +69,7 @@ def is_equiv_TP(answer_str, truth_str, verbose=False) -> bool:
         if len(answer) != 2:
             return False  
             
-    if is_equation(answer[0]):
+    if is_equation(answer[0]):   #检查是否为方程
         answer[0] = take_last_relation(answer[0]).rhs
         # answer[0] = take_last_relation(answer[0])
 
@@ -97,12 +97,12 @@ def is_equation(expr) -> bool:
     return False
 
 def take_last_relation(expr: And | Relational) -> Relational:
-    """Take the last relation from an And expression."""
+    """Take the last relation from an And expression.""" #从And表达式中取出最后一个关系式（等式）
     if isinstance(expr, And):
         return take_last_relation(expr._unsorted_args[-1])
     return expr
 
-def answer_refine(text):
+def answer_refine(text):  #LaTeX格式标准化
     text = text.replace("\n","")
     text = text.strip()
     pattern = re.compile(r'^(\$|\\\(|\\\[)')
@@ -110,7 +110,7 @@ def answer_refine(text):
         text = r"\[" + text + r"\]"
     return text  
 
-def extract_boxed_content(s: str) -> str:
+def extract_boxed_content(s: str) -> str: #提取boxed内容，处理嵌套花括号
     """
     Extract the content inside the first \boxed{} LaTeX command, handling nested braces.
     
