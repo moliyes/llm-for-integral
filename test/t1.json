@@ -2,7 +2,7 @@
   {
     "id": "problem_1",
     "input": {
-      "latex": "\\frac{\\sin ^3(x)}{9}+\\frac{2 \\sin (x)}{3}-\\frac{2}{3} x \\cos (x)-\\frac{1}{3} x \\sin ^2(x) \\cos (x)",
+      "latex": "-\\frac{\\tanh ^{-1}\\left(\\frac{\\sqrt{x} \\left(2 a+b x^2\\right)}{2 \\sqrt{a} \\sqrt{a x+b x^3+c x^5}}\\right)}{2 \\sqrt{a}}",
       "mathematica": null
     },
     "reference": {

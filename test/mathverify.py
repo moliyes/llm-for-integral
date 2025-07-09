@@ -130,8 +130,6 @@ class MathVerifier:
 # 主程序
 if __name__ == "__main__":
     # 配置
-    # 请根据您的实际Wolfram Kernel路径进行修改
-    # 示例: r"C:\Program Files\Wolfram Research\Mathematica\13.2\WolframKernel.exe"
     KERNEL_PATH = r"D:\Program Files\Wolfram Research\Wolfram\14.2\WolframKernel.exe" 
 
     # 获取当前脚本所在目录
