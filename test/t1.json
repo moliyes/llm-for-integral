@@ -2,11 +2,11 @@
   {
     "id": "problem_1",
     "input": {
-      "latex": "-\\frac{\\tanh ^{-1}\\left(\\frac{\\sqrt{x} \\left(2 a+b x^2\\right)}{2 \\sqrt{a} \\sqrt{a x+b x^3+c x^5}}\\right)}{2 \\sqrt{a}}",
+      "latex": "\\frac{\\log \\left(\\tan \\left(\\frac{x}{2}+\\frac{\\pi }{8}\\right)\\right)}{\\sqrt{2}}",
       "mathematica": null
     },
     "reference": {
-      "latex": "\\frac{3 \\sin (x)}{4}-\\frac{1}{36} \\sin (3 x)+\\frac{1}{4} (-3) x \\cos (x)+\\frac{1}{12} x \\cos (3 x)",
+      "latex": "\\frac{\\tanh ^{-1}\\left(\\frac{\\cos (x)-\\sin (x)}{\\sqrt{2}}\\right)}{\\sqrt{2}}",
       "mathematica": null
     }
   }

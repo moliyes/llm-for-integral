@@ -1,0 +1,48 @@
+题号	问题	答案	回答1	回答2	回答3	回答4	回答5	回答6	回答7	回答8	正确性	思考1	思考2	思考3	思考4	思考5	思考6	思考7	思考8																
+50	1/(Sqrt[2] + Cos[z] + Sin[z])	-((1 - Sqrt[2] Sin[z])/(Cos[z] - Sin[z]))																	
+51	1/(Sqrt[1 - x] + Sqrt[1 + x])^2	-(1/(2 x)) + Sqrt[1 - x^2]/(2 x) + ArcSin[x]/2																	
+52	1/(1 + Cos[x])^2	Sin[x]/(3 (1 + Cos[x])^2) + Sin[x]/(3 (1 + Cos[x]))																	
+53	Sin[x]/Sqrt[1 + x]	"Sqrt[2 \[Pi]] Cos[1] FresnelS[Sqrt[2/\[Pi]] Sqrt[1 + x]] - 
+ Sqrt[2 \[Pi]] FresnelC[Sqrt[2/\[Pi]] Sqrt[1 + x]] Sin[1]"																	
+54	1/(Cos[x] + Sin[x])^6	"-((Cos[x] - Sin[x])/(10 (Cos[x] + Sin[x])^5)) - (Cos[x] - Sin[x])/(
+ 15 (Cos[x] + Sin[x])^3) + (2 Sin[x])/(15 (Cos[x] + Sin[x]))"																	
+55	1/(1 + Sqrt[x + Sqrt[1 + x^2]])	"-(1/(2 (x + Sqrt[1 + x^2]))) + 1/Sqrt[x + Sqrt[1 + x^2]] + Sqrt[
+ x + Sqrt[1 + x^2]] + 1/2 Log[x + Sqrt[1 + x^2]] - 
+ 2 Log[1 + Sqrt[x + Sqrt[1 + x^2]]]"																	
+56	Sqrt[1 + x]/(x + Sqrt[1 + Sqrt[1 + x]])	"2 Sqrt[1 + x] + (
+ 8 ArcTanh[(1 + 2 Sqrt[1 + Sqrt[1 + x]])/Sqrt[5]])/Sqrt[5]"																	
+57	Sqrt[1 + E^-x]/(-E^-x + E^x)	-Sqrt[2] ArcTanh[Sqrt[1 + E^-x]/Sqrt[2]]																	
+58	Sqrt[1 + E^-x] Csch[x]	-2 Sqrt[2] ArcTanh[Sqrt[1 + E^-x]/Sqrt[2]]																	
+59	1/(1 + Cos[x] + Sin[x])^2	-Log[1 + Tan[x/2]] - (Cos[x] - Sin[x])/(1 + Cos[x] + Sin[x])																	
+60	Sqrt[1 + Tanh[4 x]]	ArcTanh[Sqrt[1 + Tanh[4 x]]/Sqrt[2]]/(2 Sqrt[2])																	
+61	ArcTan[2 Tan[x]]	"x ArcTan[2 Tan[x]] + 1/2 I x Log[1 - 3 E^(2 I x)] - 
+ 1/2 I x Log[1 - 1/3 E^(2 I x)] - 1/4 PolyLog[2, 1/3 E^(2 I x)] + 
+ 1/4 PolyLog[2, 3 E^(2 I x)]"																	
+62	(ArcTan[x] Log[x])/x	"(1/2)*I*Log[x]*PolyLog[2, (-I)*x] - (1/2)*I*Log[x]*PolyLog[2, I*x] - (1/2)*I*PolyLog[3, (-I)*x] + (1/2)*I*PolyLog[3, I*x]}"																	
+63																			
+64																			
+65																			
+66																			
+67																			
+68																			
+69																			
+70																			
+71																			
+72																			
+73																			
+74																			
+75																			
+76																			
+77																			
+78																			
+79																			
+80																			
+81																			
+82																			
+83																			
+84																			
+85																			
+86																			
+87																			
+88																			
+89																			
